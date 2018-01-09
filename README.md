@@ -1,6 +1,6 @@
-# Webpack/ES6 Seed
+# webpack+babel ES6 seed
 
-This is a project skeleton for developing in ES6 with Webpack
+This is a project skeleton for developing in ES6 with **webpack** and **babel**
 
 * `npm install` to setup
 * Remove git remote origin and GitHub references
@@ -35,17 +35,12 @@ npm run-script build
 
 About some webpack and babel properties:
 
-**presets-env:** If you want to use ES6
-
-**plugins-transform-runtime:** Eliminates duplication of babel helper functions (increases performance)
-
-**entry:** The file you want to convert
-
-**output:** The converted file named `app.bundle.js`
-
-**rules:** Sets the loaders
-
-**source-map:** If you want to edit sass/css in devtools
+* **presets-env:** If you want to use ES6
+* **plugins-transform-runtime:** Eliminates duplication of babel helper functions (increases performance)
+* **entry:** The file you want to convert
+* **output:** The converted file named `app.bundle.js`
+* **rules:** Sets the loaders
+* **source-map:** If you want to edit sass/css in devtools
 
 ## Credits
 
