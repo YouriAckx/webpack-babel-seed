@@ -1,7 +1,11 @@
 # Webpack/ES6 Seed
 
-* This is a project skeleton for developing in ES6 with Webpack
-* To setup, run `npm install`, remove remote origin, and start coding!
+This is a project skeleton for developing in ES6 with Webpack
+
+* `npm install` to setup
+* Remove git remote origin and GitHub references
+* `npm start` to run
+* Start coding!
 
 ### Install
 
@@ -9,6 +13,8 @@
 npm install
 git remote rm origin
 ```
+
+Adapt `package.json` to your project (remove author GitHub URLs)
 
 ### Run
 
@@ -44,3 +50,7 @@ About some webpack and babel properties:
 ## Credits
 
 Inspired and improved from [this seed project](https://github.com/jdiejim/Seed-project-webpack)
+
+## License
+
+GNU General Public License v3.0. Read [LICENSE.txt](LICENSE.txt)

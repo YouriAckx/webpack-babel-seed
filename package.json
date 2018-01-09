@@ -1,7 +1,7 @@
 {
   "name": "project-webpack",
   "version": "1.0.0",
-  "description": "* This is a project skeleton for developing in ES6 with Webpack * To setup, run npm install and start coding! * Additional guide included if you are interested on the steps I followed to setup the environmnet for the seed project",
+  "description": "Project skeleton for developing in ES6 with Webpack",
   "main": "webpack.config.js",
   "babel": {
     "presets": [
@@ -21,18 +21,18 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "rm -rf dist/* && webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdiejim/Seed-project-webpack.git"
+    "url": "https://github.com/YouriAckx/webpack-babel-seed.git"
   },
-  "author": "",
+  "author": "Youri Ackx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdiejim/Seed-project-webpack/issues"
+    "url": "https://github.com/YouriAckx/webpack-babel-seed.git/issues"
   },
-  "homepage": "https://github.com/jdiejim/Seed-project-webpack#readme",
+  "homepage": "https://github.com/YouriAckx/webpack-babel-seed.git",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
