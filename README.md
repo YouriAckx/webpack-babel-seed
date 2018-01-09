@@ -17,6 +17,7 @@ npm start
 ```
 
 Shoud start the project and open a browser window at `http://localhost:8080/`
+with a green background and a big "Success" message.
 
 ### Build
 
@@ -41,6 +42,5 @@ About some webpack and babel properties:
 **source-map:** If you want to edit sass/css in devtools
 
 ## Credits
-
 
 Inspired and improved from [this seed project](https://github.com/jdiejim/Seed-project-webpack)
