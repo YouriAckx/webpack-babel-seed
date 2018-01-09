@@ -12,10 +12,9 @@ module.exports = {
         filename: '[name].bundle.js'
     },
     plugins: [
-      // new HtmlWebpackPlugin()
       new HtmlWebpackPlugin({
         title: 'Custom template',
-        template: 'foo.html', // Load a custom template (lodash by default see the FAQ for details)
+        template: 'my-index.html', // Load a custom template (lodash by default see the FAQ for details)
       })
     ],
     devtool: 'source-map',
