@@ -2,12 +2,7 @@
 
 This is a project skeleton for developing in ES6 with **webpack** and **babel**
 
-* `npm install` to setup
-* Remove git remote origin and GitHub references
-* `npm start` to run
-* Start coding!
-
-### Install
+## Install
 
 ```Terminal
 npm install
@@ -16,7 +11,7 @@ git remote rm origin
 
 Adapt `package.json` to your project (remove author GitHub URLs)
 
-### Run
+## Run
 
 ```Terminal
 npm start
@@ -25,13 +20,13 @@ npm start
 Shoud start the project and open a browser window at `http://localhost:8080/`
 with a green background and a big "Success" message.
 
-### Build
+## Build
 
 ```Terminal
 npm run-script build
 ```
 
-### Noteworthy properties
+## Noteworthy properties
 
 About some webpack and babel properties:
 
@@ -41,6 +36,10 @@ About some webpack and babel properties:
 * **output:** The converted file named `app.bundle.js`
 * **rules:** Sets the loaders
 * **source-map:** If you want to edit sass/css in devtools
+
+## Known issues
+
+* `hoek` dependency vulnerability. Read [the appalling comment](https://github.com/sass/node-sass/issues/2252) and cry.
 
 ## Credits
 
