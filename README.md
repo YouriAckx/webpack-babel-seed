@@ -37,6 +37,15 @@ About some webpack and babel properties:
 * **rules:** Sets the loaders
 * **source-map:** If you want to edit sass/css in devtools
 
+## Troubleshooting
+
+In doubt, a safe bet is:
+
+```Terminal
+$ rm -rf node_modules
+$ npm install
+```
+
 ## Known issues
 
 * `hoek` dependency vulnerability. Read [the appalling comment](https://github.com/sass/node-sass/issues/2252) and cry.
