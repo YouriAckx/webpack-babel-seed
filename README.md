@@ -59,7 +59,6 @@ $ npm install
 ## Known issues
 
 * Slightly slow to boot (might be due to html-webpack-plugin)
-* `hoek` dependency vulnerability. Read [the appalling comment](https://github.com/sass/node-sass/issues/2252) and cry.
 
 ## Credits
 
