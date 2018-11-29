@@ -2,23 +2,7 @@
   "name": "project-webpack",
   "version": "1.1.0",
   "description": "Project skeleton for developing in yypescript with webpack and babel",
-  "main": "webpack.config.js",
-  "babel": {
-    "presets": [
-      "env"
-    ],
-    "plugins": [
-      [
-        "transform-runtime",
-        {
-          "helpers": false,
-          "polyfill": false,
-          "regenerator": true,
-          "moduleName": "babel-runtime"
-        }
-      ]
-    ]
-  },
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack"
