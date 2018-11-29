@@ -1,6 +1,16 @@
-# webpack+babel ES6 seed
+# webpack+babel typescript seed
 
-This is a project skeleton for developing in ES6 with **webpack** and **babel**
+Project skeleton for developing in Typescript with **webpack 4** and **babel 7**.
+No ReactJS
+([see here](https://github.com/rwieruch/minimal-react-webpack-babel-setup) if you need a react seed project).
+
+## Features
+
+* Webpack 4
+* Babel 7
+* Hot Module Replacement
+* scss
+* HtmlWebpackPlugin
 
 ## Install
 
@@ -17,8 +27,7 @@ Adapt `package.json` to your project (remove author GitHub URLs)
 npm start
 ```
 
-Shoud start the project and open a browser window at `http://localhost:8080/`
-with a green background and a big "Success" message.
+Open `http://localhost:8080/`
 
 ## Build
 
@@ -31,6 +40,7 @@ npm run-script build
 About some webpack and babel properties:
 
 * **presets-env:** If you want to use ES6
+* **html-webpack-plugin** To use your own index.html template
 * **plugins-transform-runtime:** Eliminates duplication of babel helper functions (increases performance)
 * **entry:** The file you want to convert
 * **output:** The converted file named `app.bundle.js`
@@ -48,11 +58,12 @@ $ npm install
 
 ## Known issues
 
+* Slightly slow to boot (might be due to html-webpack-plugin)
 * `hoek` dependency vulnerability. Read [the appalling comment](https://github.com/sass/node-sass/issues/2252) and cry.
 
 ## Credits
 
-Inspired and improved from [this seed project](https://github.com/jdiejim/Seed-project-webpack)
+Inspired and improved from [this seed project](https://github.com/rwieruch/minimal-react-webpack-babel-setup)
 
 ## License
 

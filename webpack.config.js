@@ -1,67 +1,71 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    context: path.join(__dirname, 'src'),
-    entry: {
-        app: './index.js'
-    },
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: '[name].bundle.js'
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        title: 'Custom template',
-        template: 'my-index.html', // Load a custom template (lodash by default see the FAQ for details)
-      })
-    ],
-    devtool: 'source-map',
-    module: {
-        rules: [
+  entry: './src/index.js',
+  module: {
+    rules: [
+      {
+        test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+        use: [
             {
-            test: /\.(png|jpg|gif)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {}
-                }]
-            },
-            {
-                   test: /\.html$/,
-                   loader: 'html-loader'
-            },
-            {
-                test: /\.js$/,
-                use: 'babel-loader',
-                exclude: /node-modules/
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
+              loader: 'file-loader',
+              options: {name: '[name].[ext]'}
             }
         ]
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'build'),
-        inline: true,
-        stats: 'errors-only'
-    }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['*', '.tsx', '.ts', '.js', '.jsx']
+  },
+  output: {
+    path: __dirname + '/dist',
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      hash: false,
+      title: 'Minimal Webpack 4 + Babel 7 seed',
+      template: './src/index.html',
+      filename: './index.html'
+    })
+  ],
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  }
 };
