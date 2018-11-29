@@ -1,15 +1,38 @@
 {
-  "name": "minimal-react-webpack-babel-setup",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "test": "echo \"No test specified\" && exit 0"
+  "name": "project-webpack",
+  "version": "1.1.0",
+  "description": "Project skeleton for developing in yypescript with webpack and babel",
+  "main": "webpack.config.js",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        {
+          "helpers": false,
+          "polyfill": false,
+          "regenerator": true,
+          "moduleName": "babel-runtime"
+        }
+      ]
+    ]
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yackx/webpack-babel-seed.git"
+  },
+  "author": "Youri Ackx (credits to rwieruch)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yackx/webpack-babel-seed.git/issues"
+  },
+  "homepage": "https://github.com/yackx/webpack-babel-seed.git",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
