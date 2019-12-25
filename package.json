@@ -1,7 +1,7 @@
 {
   "name": "webpack-babel-seed",
   "version": "0.0.3",
-  "description": "webpack+babel seed project. No react. ",
+  "description": "webpack+babel seed project. No ReactJS.",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
