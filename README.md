@@ -11,11 +11,25 @@ No ReactJS
 * Hot Module Replacement
 * scss
 * HtmlWebpackPlugin
+* yarn (you can issue equivalent npm commands if you prefer)
 
 ## Install
 
+Fix npm out-of-memory errors:
+
 ```Terminal
-npm install
+export NODE_OPTIONS=--max_old_space_size=4096
+```
+
+Install
+
+```Terminal
+yarn install
+```
+
+Remove seed project git origin (and replace by your own if applicable)
+
+```Terminal
 git remote rm origin
 ```
 
