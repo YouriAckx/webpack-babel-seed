@@ -11,9 +11,15 @@ No ReactJS
 * Hot Module Replacement
 * scss
 * HtmlWebpackPlugin
-* yarn (you can issue equivalent npm commands if you prefer)
+* yarn
 
 ## Install
+
+Install yarn. This step is optional. You can use the equivalent `npm` commands if you prefer.
+
+```Terminal
+npm install -g yarn
+```
 
 Fix npm out-of-memory errors:
 
@@ -38,7 +44,7 @@ Adapt `package.json` to your project (remove author GitHub URLs)
 ## Run
 
 ```Terminal
-npm start
+yarn start
 ```
 
 Open `http://localhost:8080/`
@@ -46,7 +52,7 @@ Open `http://localhost:8080/`
 ## Build
 
 ```Terminal
-npm run-script build
+yarn build
 ```
 
 ## Noteworthy properties
